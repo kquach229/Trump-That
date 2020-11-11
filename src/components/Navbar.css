@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: crimson;
+}
+
+.navbar__image {
+  height: 80px;
+  width: auto;
+  margin: 5px;
+}
+
+.navbar__left {
+}
+
+.navbar__right {
+  flex-direction: flex-end;
+}
+
+.navbar__link {
+  margin: 10px;
+  text-decoration: none;
+  color: azure;
+  transition: 0.8s ease-in-out;
+}
+
+.navbar__link:hover {
+  color: darksalmon;
+}

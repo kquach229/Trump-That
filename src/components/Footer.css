@@ -1,0 +1,42 @@
+.footer {
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.footer__image {
+  height: 150px;
+  width: auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 250px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: azure;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 450px;
+}
+
+.footer__socialLink > .MuiSvgIcon-root {
+  color: azure;
+  transition: 1.5s ease-in-out;
+}
+
+.footer__socialLink > .MuiSvgIcon-root:hover {
+  color: darksalmon;
+  transform: scale(2);
+}
