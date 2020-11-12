@@ -11,7 +11,9 @@ const Home = () => {
       <br />
       <br />
       <div className="page-header text-center">
-        <img alt="trumpPic" className="trump_small img-resposive" />
+        <a href="/home">
+          <img className="trump_small img-resposive" />
+        </a>
         <h1>Donald J. Trump</h1>
         <small className="subtitle">
           The 45th and current President of the United States
