@@ -12,7 +12,7 @@ const Home = () => {
       <br />
       <div className="page-header text-center">
         <a href="/home">
-          <img className="trump_small img-resposive" />
+          <img alt="trumpPic" className="trump_small img-resposive" />
         </a>
         <h1>Donald J. Trump</h1>
         <small className="subtitle">
