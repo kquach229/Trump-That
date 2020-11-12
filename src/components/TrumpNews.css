@@ -1,0 +1,9 @@
+.trumpNews {
+  padding: 5px;
+}
+
+.trumpNews__list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}

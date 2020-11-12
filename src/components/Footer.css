@@ -22,6 +22,11 @@
 .footer__link {
   text-decoration: none;
   color: azure;
+  transition: 1s ease-in-out;
+}
+
+.footer__link:hover {
+  color: darksalmon;
 }
 
 .footer__social {
