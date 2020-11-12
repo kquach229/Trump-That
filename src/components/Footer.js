@@ -4,16 +4,12 @@ import "./Footer.css";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
-
+import whiteHouse from "../assets/whiteHouse.png";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__imageContainer">
-        <img
-          src="https://lh3.googleusercontent.com/proxy/5JTbIN3GxJ4ZXQiZd1IbiyVYJyBaEBy3vWzXxKkTkneP2GnxFVEbfrFidI-MiO-t-GlyaVK7UZZx-UN0mzVB_IDEZ6prI9pItc9IXihf6EqTTtQmAa_YueD-FF9gUfOf2Du51_DM5BQMlNcQbe0cc197TCMyJGbFHdH1o36yn-e_oN8BMdDfPw"
-          alt="white__house"
-          className="footer__image"
-        />
+        <img src={whiteHouse} alt="whitehouse" className="footer__image" />
       </div>
       <div className="footer__links">
         <Link to="/about" className="footer__link">

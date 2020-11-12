@@ -38,6 +38,7 @@ const Home = () => {
       <br />
 
       <div className="panel panel-default">
+        <h1 className="home__sectionHeader">Trump Throughout the Years</h1>
         <div className="home__trumpLife">
           <div className="home__kid">
             <img

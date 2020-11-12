@@ -11,10 +11,12 @@
 }
 
 .trumpLanding__typewriter {
-  padding-right: 30vw;
+  padding-right: 40vw;
   color: darksalmon;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 60px;
+  margin-bottom: 80px;
+  font-family: "Sacramento", cursive;
 }
 
 .landingButton {

@@ -9,7 +9,13 @@ const TrumpLanding = (props) => {
       <div className="trumpLanding__typewriter">
         <Typewriter
           options={{
-            strings: ["Hello", "World"],
+            strings: [
+              "Sleepy Joe",
+              "China",
+              "Make America Great Again",
+              "Fake news",
+              "Learn something new every day",
+            ],
             autoStart: true,
             loop: true,
           }}

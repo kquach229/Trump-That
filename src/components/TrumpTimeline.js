@@ -33,6 +33,7 @@ const TrumpTimeline = () => {
   AOS.init();
   return (
     <div className="trumpTimeLine">
+      <h1 className="trumpTimeLine__sectionHeader">Trump Timeline</h1>
       <Timeline align="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
