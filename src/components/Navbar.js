@@ -10,6 +10,7 @@ const Navbar = () => {
           <img
             src="https://cdn.pixabay.com/photo/2017/01/31/19/15/cartoon-2026571__340.png"
             className="navbar__image"
+            alt="trumpCartoon"
           />
         </Link>
       </div>

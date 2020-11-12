@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import AOS from "aos";
-import Typewriter from "typewriter-effect";
 import TrumpTimeline from "./TrumpTimeline";
 
 const Home = () => {
@@ -12,9 +11,7 @@ const Home = () => {
       <br />
       <br />
       <div className="page-header text-center">
-        <a href="#">
-          <img className="trump_small img-resposive" />
-        </a>
+        <img alt="trumpPic" className="trump_small img-resposive" />
         <h1>Donald J. Trump</h1>
         <small className="subtitle">
           The 45th and current President of the United States
