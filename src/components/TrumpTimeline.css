@@ -1,0 +1,14 @@
+.trumpTimeLine {
+  width: 95%;
+  padding: 50px;
+}
+
+.trumpTimeLine__item {
+  padding: 20px;
+}
+
+.trumpTimeLine__date {
+  font-size: 20px;
+  padding-top: 8px;
+  font-weight: bold;
+}
