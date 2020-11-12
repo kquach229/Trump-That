@@ -221,3 +221,14 @@ footer {
 .home__sectionHeader {
   font-family: "Sacramento", cursive;
 }
+
+.home__profilePic {
+  background-repeat: no-repeat;
+  border: 3px solid #666;
+  border-radius: 50%;
+  height: 200px;
+  width: auto;
+  box-shadow: 1px 5px 115px #ffb544, -1px -5px 115px darksalmon;
+  margin-bottom: 2em;
+  animation: fadeIn 3s infinite alternate;
+}

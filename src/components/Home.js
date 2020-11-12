@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import AOS from "aos";
 import TrumpTimeline from "./TrumpTimeline";
+import donaldLand from "../assets/donaldLand.jpg";
 
 const Home = () => {
   AOS.init();
@@ -11,9 +12,7 @@ const Home = () => {
       <br />
       <br />
       <div className="page-header text-center">
-        <a href="/home">
-          <img alt="trumpPic" className="trump_small img-resposive" />
-        </a>
+        <img className="home__profilePic" src={donaldLand} alt="donald" />
         <h1>Donald J. Trump</h1>
         <small className="subtitle">
           The 45th and current President of the United States
