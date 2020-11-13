@@ -15,7 +15,7 @@ const Footer = () => {
         <Link to="/about" className="footer__link">
           About
         </Link>
-        <Link to="/about" className="footer__link">
+        <Link to="/trumpnews" className="footer__link">
           Real News
         </Link>
         <Link to="/about" className="footer__link">
