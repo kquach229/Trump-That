@@ -28,7 +28,8 @@ const TrumpNews = () => {
 
   return (
     <div className="trumpNews">
-      <div className="trumpNews__list">
+      <h1 className="trumpNews__sectionHeader">Trump News</h1>
+      <div className="trumpNews__container">
         {news.map((item) => (
           <CardComponent key={uuidv4()} item={item} />
         ))}

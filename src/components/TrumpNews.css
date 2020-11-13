@@ -1,9 +1,17 @@
 .trumpNews {
-  padding: 5px;
+  background-color: darksalmon;
+  padding: 70px;
 }
 
-.trumpNews__list {
+.trumpNews__sectionHeader {
+  font-family: "Sacramento", cursive;
+  margin-bottom: 30px;
+}
+
+.trumpNews__container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 20px;
+  row-gap: 50px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 13% 13% 13%;
+  justify-content: center;
 }

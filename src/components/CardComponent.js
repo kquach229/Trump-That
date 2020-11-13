@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    padding: 20,
   },
   media: {
     height: 50,
@@ -44,37 +45,35 @@ const CardComponent = ({ item }) => {
   console.log(item.author);
 
   return (
-    <div className="cardComponent">
-      <Card className={classes.root}>
-        <CardHeader
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title={item.title}
-          subheader={item.publishedAt}
-        />
-        <CardMedia
-          className={classes.media}
-          image={item.urlToImage}
-          title="Paella dish"
-        />
-        <br />
-        <div className="cardComponent__contentText">{item.content}</div>
-        <br />
+    <Card className={classes.root}>
+      <CardHeader
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
+        title={item.title}
+        subheader={item.publishedAt}
+      />
+      <CardMedia
+        className={classes.media}
+        image={item.urlToImage}
+        title="Paella dish"
+      />
+      <br />
+      <div className="cardComponent__contentText">{item.content}</div>
+      <br />
 
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {`By: ${item.author}`}
-          </Typography>
-          <hr />
-          <a href={item.url} target="blank">
-            Read More
-          </a>
-        </CardContent>
-      </Card>
-    </div>
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {`By: ${item.author}`}
+        </Typography>
+        <hr />
+        <a href={item.url} target="blank">
+          Read More
+        </a>
+      </CardContent>
+    </Card>
   );
 };
 

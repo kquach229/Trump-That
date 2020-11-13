@@ -1,8 +1,7 @@
-.cardComponent {
-  border: darksalmon 2px solid;
-  box-shadow: 5px 5px 15px 5px #000000;
-}
-
 .cardComponent__contentText {
   padding: 20px;
+}
+
+.cardComponent {
+  background-color: darkslategrey;
 }
