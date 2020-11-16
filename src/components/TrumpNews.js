@@ -5,7 +5,6 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
 const TrumpNews = () => {
-  const API_KEY = "0949535b152f400aa2a162ecc055021a";
   const [news, setNews] = useState([]);
 
   console.log(news);
