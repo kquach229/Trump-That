@@ -16,7 +16,7 @@ const TrumpNews = () => {
       "q=Trump&" +
       "from=2020-11-12&" +
       "sortBy=popularity&" +
-      "apiKey=0949535b152f400aa2a162ecc055021a";
+      `apiKey=${API_KEY}`;
 
     axios
       .get(url)
