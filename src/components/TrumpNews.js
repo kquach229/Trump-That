@@ -12,7 +12,7 @@ const TrumpNews = () => {
 
   useEffect(() => {
     var url =
-      "http://newsapi.org/v2/everything?" +
+      "https://newsapi.org/v2/everything?" +
       "q=Trump&" +
       "from=2020-11-12&" +
       "sortBy=popularity&" +
