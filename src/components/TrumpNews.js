@@ -3,6 +3,7 @@ import "./TrumpNews.css";
 import CardComponent from "./CardComponent";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
+import AOS from "aos";
 
 const TrumpNews = () => {
   const API_KEY = process.env.REACT_APP_API_KEY;
@@ -21,10 +22,12 @@ const TrumpNews = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  AOS.init();
+
   return (
     <div className="trumpNews">
       <h1 className="trumpNews__sectionHeader">Trump News</h1>
-      <div className="trumpNews__container">
+      <div className="trumpNews__container" data-aos="zoom-in-up">
         {news.map((item) => (
           <CardComponent key={uuidv4()} item={item} />
         ))}
