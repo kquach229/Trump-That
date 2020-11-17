@@ -12,7 +12,7 @@
   display: grid;
   row-gap: 50px;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 13% 13% 13%;
+  grid-template-rows: 28% 28% 28% 28;
   justify-content: center;
   place-content: center;
 }
@@ -21,7 +21,7 @@
   .trumpNews__container {
     grid-template-columns: 1fr 1fr;
 
-    grid-template-rows: 10%;
+    grid-template-rows: 20%;
   }
 }
 
@@ -31,7 +31,7 @@
 
     width: 100%;
 
-    grid-template-rows: 5%;
+    grid-template-rows: 10%;
 
     padding-bottom: 20px;
   }

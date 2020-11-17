@@ -5,18 +5,13 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 
 const TrumpNews = () => {
-  const API_KEY = "0949535b152f400aa2a162ecc055021a";
+  const API_KEY = "ac9719c10da169a6a9c0f26c393e659a";
   const [news, setNews] = useState([]);
 
   console.log(news);
 
   useEffect(() => {
-    var url =
-      "https://newsapi.org/v2/everything?" +
-      "q=Trump&" +
-      "from=2020-11-12&" +
-      "sortBy=popularity&" +
-      `apiKey=${API_KEY}`;
+    var url = `https://gnews.io/api/v4/search?q=trump&token=${API_KEY}&lang=en`;
 
     axios
       .get(url)
