@@ -22,10 +22,10 @@
 .navbar__link {
   margin: 10px;
   text-decoration: none;
-  color: azure;
+  color: white;
   transition: 0.8s ease-in-out;
 }
 
 .navbar__link:hover {
-  color: darksalmon;
+  color: aliceblue;
 }

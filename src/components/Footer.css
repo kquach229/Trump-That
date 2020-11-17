@@ -21,12 +21,13 @@
 
 .footer__link {
   text-decoration: none;
-  color: azure;
+  color: white;
   transition: 1s ease-in-out;
+  font-size: 12px;
 }
 
 .footer__link:hover {
-  color: darksalmon;
+  color: aliceblue;
 }
 
 .footer__social {
@@ -37,11 +38,11 @@
 }
 
 .footer__socialLink > .MuiSvgIcon-root {
-  color: azure;
+  color: aliceblue;
   transition: 1.5s ease-in-out;
 }
 
 .footer__socialLink > .MuiSvgIcon-root:hover {
-  color: darksalmon;
+  color: aliceblue;
   transform: scale(2);
 }
