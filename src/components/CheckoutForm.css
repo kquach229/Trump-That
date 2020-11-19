@@ -1,0 +1,7 @@
+#payment-form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 50vw;
+  margin-top: 60px;
+}

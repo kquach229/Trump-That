@@ -33,8 +33,6 @@ const useStyles = makeStyles((theme) => ({
 const CardComponent = ({ item }) => {
   const classes = useStyles();
 
-  console.log(item.author);
-
   return (
     <Card className={classes.root}>
       <CardHeader

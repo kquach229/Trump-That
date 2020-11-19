@@ -6,6 +6,7 @@
 .trumpNews__sectionHeader {
   font-family: "Sacramento", cursive;
   margin-bottom: 30px;
+  font-size: 60px;
 }
 
 .trumpNews__container {
@@ -37,7 +38,6 @@
   }
 
   .trumpNews {
-    background-color: darksalmon;
     padding: 2px;
   }
 }

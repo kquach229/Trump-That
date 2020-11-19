@@ -9,17 +9,12 @@ const TrumpNews = () => {
   const API_KEY = process.env.REACT_APP_API_KEY;
   const [news, setNews] = useState([]);
 
-  console.log(news);
-
   useEffect(() => {
     var url = `https://gnews.io/api/v4/search?q=trump&token=${API_KEY}&lang=en`;
 
-    axios
-      .get(url)
-      .then(async (res) => {
-        setNews(res.data.articles);
-      })
-      .catch((err) => console.log(err));
+    axios.get(url).then(async (res) => {
+      setNews(res.data.articles);
+    });
   }, []);
 
   AOS.init();
