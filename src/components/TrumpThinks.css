@@ -1,0 +1,20 @@
+.trumpThinks {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.trumpThinks__quoteButton {
+  height: 60px;
+  width: 50vw;
+  min-width: 50vw;
+}
+
+.trumpThinks__sectionHeader {
+  font-family: "Sacramento", cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+}

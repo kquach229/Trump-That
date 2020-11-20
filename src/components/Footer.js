@@ -12,13 +12,16 @@ const Footer = () => {
         <img src={whiteHouse} alt="whitehouse" className="footer__image" />
       </div>
       <div className="footer__links">
-        <Link to="/about" className="footer__link">
-          About
+        <Link to="/home" className="footer__link">
+          Home
+        </Link>
+        <Link to="/trumpthinks" className="footer__link">
+          TrumpThinks
         </Link>
         <Link to="/trumpnews" className="footer__link">
-          Real News
+          TrumpNews
         </Link>
-        <Link to="/about" className="footer__link">
+        <Link to="/donate" className="footer__link">
           Donate
         </Link>
       </div>

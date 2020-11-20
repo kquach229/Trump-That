@@ -14,6 +14,12 @@ const Donate = () => {
   return (
     <div className="donate">
       <h1 className="donate__sectionHeader">Donate Now</h1>
+      <div className="container">
+        <div id="one">
+          <img src="https://agbales.github.io/new-yorker-trump/images/Lil-Donald-1.png" />
+        </div>
+      </div>
+
       <Elements stripe={stripePromise}>
         <CheckoutForm />
       </Elements>

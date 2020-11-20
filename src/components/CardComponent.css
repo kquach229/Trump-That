@@ -5,3 +5,7 @@
 .cardComponent {
   background-color: darkslategrey;
 }
+
+.thinks__card {
+  height: 500px;
+}

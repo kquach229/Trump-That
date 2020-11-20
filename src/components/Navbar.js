@@ -18,11 +18,11 @@ const Navbar = () => {
         <Link to="/home" className="navbar__link">
           Home
         </Link>
-        <Link to="/about" className="navbar__link">
-          About
+        <Link to="/trumpthinks" className="navbar__link">
+          TrumpThinks
         </Link>
         <Link to="/trumpnews" className="navbar__link">
-          Real News
+          TrumpNews
         </Link>
         <Link to="/donate" className="navbar__link">
           Donate

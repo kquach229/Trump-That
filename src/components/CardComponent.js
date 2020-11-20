@@ -28,42 +28,62 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: "rotate(180deg)",
   },
+  trumpThinksCard: {
+    height: 300,
+    minWidth: "50vw",
+    width: "50vw",
+    backgroundColor: "white",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 }));
 
-const CardComponent = ({ item }) => {
+const CardComponent = ({ item, path, quote }) => {
   const classes = useStyles();
 
-  return (
-    <Card className={classes.root}>
-      <CardHeader
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={item.title}
-        subheader={item.publishedAt}
-      />
-      <CardMedia
-        className={classes.media}
-        image={item.image}
-        title="Paella dish"
-      />
-      <br />
-      <div className="cardComponent__contentText">{item.content}</div>
-      <br />
+  const cardRender =
+    path === "/trumpnews" ? (
+      <Card className={classes.root}>
+        <CardHeader
+          action={
+            <IconButton aria-label="settings">
+              <MoreVertIcon />
+            </IconButton>
+          }
+          title={item.title}
+          subheader={item.publishedAt}
+        />
+        <CardMedia
+          className={classes.media}
+          image={item.image}
+          title="Paella dish"
+        />
+        <br />
+        <div className="cardComponent__contentText">{item.content}</div>
+        <br />
 
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {`By: ${item.source.name}`}
-        </Typography>
-        <hr />
-        <a href={item.url} target="blank">
-          Read More
-        </a>
-      </CardContent>
-    </Card>
-  );
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {`By: ${item.source.name}`}
+          </Typography>
+          <hr />
+          <a href={item.url} target="blank">
+            Read More
+          </a>
+        </CardContent>
+      </Card>
+    ) : (
+      <Card className="thinks__card" className={classes.trumpThinksCard}>
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {quote}
+          </Typography>
+        </CardContent>
+      </Card>
+    );
+
+  return <div>{cardRender}</div>;
 };
 
 export default CardComponent;

@@ -1,7 +1,11 @@
 #payment-form {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   min-width: 50vw;
   margin-top: 60px;
+}
+
+.checkoutForm__successAlert {
+  margin-top: 30px;
 }

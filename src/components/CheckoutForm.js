@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import "./CheckoutForm.css";
 import axios from "axios";
+import Alert from "@material-ui/lab/Alert";
+import AlertTitle from "@material-ui/lab/AlertTitle";
+import "./CheckoutForm.css";
 
 export default function CheckoutForm() {
   const [succeeded, setSucceeded] = useState(false);
@@ -29,6 +32,7 @@ export default function CheckoutForm() {
       },
     },
   };
+
   const handleChange = async (event) => {
     // Listen for changes in the CardElement
     // and display any errors as the customer types their card details
@@ -52,7 +56,7 @@ export default function CheckoutForm() {
         const response = await axios.post(
           "http://localhost:8080/stripe/charge",
           {
-            amount: 6999,
+            amount: 10000,
             id: id,
           }
         );
@@ -60,8 +64,14 @@ export default function CheckoutForm() {
         console.log("Stripe 35 | data", response.data.success);
         if (response.data.success) {
           setSucceeded(true);
+          elements.getElement(CardElement).clear();
+          setTimeout(() => {
+            setSucceeded(false);
+          }, 9000);
+
           setProcessing(false);
           console.log("CheckoutForm.js 25 | payment successful!");
+          console.log(response.data);
         }
       } catch (error) {
         console.log("CheckoutForm.js 28 | ", error);
@@ -80,7 +90,11 @@ export default function CheckoutForm() {
       />
       <button disabled={processing || disabled || succeeded} id="submit">
         <span id="button-text">
-          {processing ? <div className="spinner" id="spinner"></div> : "Pay"}
+          {processing ? (
+            <div className="spinner" id="spinner"></div>
+          ) : (
+            "Pay $10"
+          )}
         </span>
       </button>
       {/* Show any error that happens when processing the payment */}
@@ -91,12 +105,11 @@ export default function CheckoutForm() {
       )}
       {/* Show a success message upon completion */}
       <p className={succeeded ? "result-message" : "result-message hidden"}>
-        Payment succeeded, see the result in your
-        <a href={`https://dashboard.stripe.com/test/payments`}>
-          {" "}
-          Stripe dashboard.
-        </a>{" "}
-        Refresh the page to pay again.
+        <Alert className="checkoutForm__successAlert" severity="success">
+          <AlertTitle>Success</AlertTitle>
+          We got your donation! Thank you —{" "}
+          <strong>Lets Make America Great Again!</strong>
+        </Alert>
       </p>
     </form>
   );

@@ -9,7 +9,7 @@
 
 .donate__sectionHeader {
   font-family: "Sacramento", cursive;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 60px;
 }
 
@@ -126,6 +126,33 @@ button:disabled {
   -webkit-animation: loading 2s infinite ease;
   animation: loading 2s infinite ease;
 }
+
+.container {
+  height: 404px;
+  width: 400px;
+  background-color: #fbfaf6;
+  margin-top: 20px;
+}
+
+#one {
+  top: 0;
+  left: 0;
+  margin: 0px;
+  z-index: 3;
+  animation: one 2s infinite alternate ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes one {
+  0% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes loading {
   0% {
     -webkit-transform: rotate(0deg);

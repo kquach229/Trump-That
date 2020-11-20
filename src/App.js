@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import TrumpNews from "./components/TrumpNews";
 import Donate from "./components/Donate";
+import TrumpThinks from "./components/TrumpThinks";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route component={TrumpLanding} exact path="/" />
           <Route component={Home} path="/home" />
           <Route component={TrumpNews} path="/trumpnews" />
+          <Route component={TrumpThinks} path="/trumpthinks" />
           <Route component={Donate} path="/donate" />
         </Switch>
         <Footer />
